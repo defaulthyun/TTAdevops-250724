@@ -15,11 +15,11 @@ spec:
     spec:
       containers:
       - name: fastapi
-        image: docker pull ghcr.io/defaulthyun/tta-devops/my-app:latest  # GHCR 이미지 경로
+        image: ghcr.io/defaulthyun/tta-devops/my-app:latest  # GHCR 이미지 경로
         ports:
         - containerPort: 8000
 #      imagePullSecrets:
-#      - name: ghcr-secret  # 생성한 ImagePullSecret 참조
+    #  - name: ghcr-secret  # 생성한 ImagePullSecret 참조
 
 ---
 apiVersion: v1
